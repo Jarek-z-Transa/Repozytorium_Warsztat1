@@ -1,0 +1,3 @@
+1, Pogłaskać kota, 2020-05-23, ważny
+2, Wyprasować koszulę, 2020-05-24, ważny
+3, Wyjść na spacer, 2020-05-25, nieważny
