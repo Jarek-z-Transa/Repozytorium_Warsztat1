@@ -1,6 +1,8 @@
 package pl.coderslab;
 
 import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 
@@ -79,6 +81,12 @@ public class TaskManager {
         String a = input.nextLine();
         System.out.println("Wprowadź datę ");
         String b = input.nextLine();
+        boolean dateFormat = dateCheck(b);
+        while (dateFormat == false) {
+            System.out.println("Wprowadzone dane nia są datą, proszę wprowadź date w formacie rrrr-mm-dd");
+            b = input.nextLine();
+            dateFormat = dateCheck(b);
+        }
         System.out.println("Czy jest task ważny? true/false");
         String c = input.nextLine();
         while (!c.equals("true") && !c.equals("false")) {
@@ -197,5 +205,15 @@ public class TaskManager {
             System.out.println("Brak pliku.");
         }
         return iloscTaskow;
+    }
+    public static boolean dateCheck(String date) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(false);
+        try {
+            dateFormat.parse(date.trim());
+        } catch (ParseException pe) {
+            return false;
+        }
+        return true;
     }
 }

@@ -1,3 +1,5 @@
-1, Pogłaskać kota, 2020-05-23, ważny
-2, Wyprasować koszulę, 2020-05-24, ważny
-3, Wyjść na spacer, 2020-05-25, nieważny
+1, Wyjść na spacer, 2020-05-25, nieważny
+2, Gracias, 2020-07-01, nieważny
+3, Zrobić zadania, 2020-07-11, ważny
+4, Założyć rękawice, 2020-07-11, ważny
+5, Wziąć kredyt, 2020-02-29, nieważny
